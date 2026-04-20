@@ -778,6 +778,80 @@ export const AREA_PAGES: AreaPage[] = [
     ],
   },
   {
+    slug: "medina",
+    title: "Medina",
+    metaTitle: "Medina Junk Removal",
+    metaDescription:
+      "Medina junk removal for premium homes, estate cleanouts, furniture pickup, garage cleanouts, and careful residential hauling with polished communication.",
+    h1: "Junk removal in Medina.",
+    intro:
+      "Medina jobs tend to require a cleaner, higher-trust level of service. Homeowners usually want direct communication, careful route protection, and a crew that treats the property with real respect.",
+    localAngle:
+      "The fit in Medina is premium residential hauling: furniture pickup, garage overflow, estate work, and downsizing jobs where presentation matters as much as speed.",
+    commonRequests: [
+      "Furniture pickup",
+      "Garage cleanouts",
+      "Estate and downsizing cleanouts",
+      "General household junk removal",
+    ],
+    familiarWith: [
+      "Higher-finish residential properties",
+      "Careful route protection through the home",
+      "Polished communication and arrival standards",
+    ],
+    relatedServiceSlugs: ["furniture-removal", "garage-cleanout", "estate-cleanout", "junk-removal"],
+    nearby: ["Bellevue", "Clyde Hill", "Bridle Trails", "Kirkland"],
+    faqs: [
+      {
+        question: "Do you serve Medina for premium residential junk removal?",
+        answer:
+          "Yes. Medina is a strong fit for careful furniture removal, estate cleanouts, garage cleanouts, and general household haul-away.",
+      },
+      {
+        question: "What Medina jobs are most common?",
+        answer:
+          "Furniture pickup, garage cleanouts, downsizing jobs, estate clearing, and general residential junk removal are all common Medina requests.",
+      },
+    ],
+  },
+  {
+    slug: "clyde-hill",
+    title: "Clyde Hill",
+    metaTitle: "Clyde Hill Junk Removal",
+    metaDescription:
+      "Clyde Hill junk removal for estate cleanouts, furniture removal, garage cleanouts, and premium residential hauling with clear communication and careful handling.",
+    h1: "Junk removal in Clyde Hill.",
+    intro:
+      "Clyde Hill clients usually want a crew that feels organized from the first text through the final sweep-up. The work is often residential, detail-sensitive, and built around clean execution.",
+    localAngle:
+      "Clyde Hill is a strong market for premium residential service because homeowners expect punctual scheduling, careful loading, and straightforward communication.",
+    commonRequests: [
+      "Furniture removal",
+      "Garage and storage cleanouts",
+      "Estate cleanouts",
+      "General household junk hauling",
+    ],
+    familiarWith: [
+      "Detail-sensitive residential work",
+      "Careful loading in finished homes",
+      "Scheduling around active households and contractors",
+    ],
+    relatedServiceSlugs: ["furniture-removal", "garage-cleanout", "estate-cleanout", "junk-removal"],
+    nearby: ["Medina", "Bellevue", "Kirkland", "Bridle Trails"],
+    faqs: [
+      {
+        question: "Do you handle Clyde Hill estate and downsizing cleanouts?",
+        answer:
+          "Yes. Clyde Hill is a strong fit for estate cleanouts, downsizing jobs, furniture removal, and larger residential haul-away projects.",
+      },
+      {
+        question: "What service style fits Clyde Hill best?",
+        answer:
+          "Clear communication, careful property treatment, punctual arrival, and a polished finished result are the right fit for Clyde Hill work.",
+      },
+    ],
+  },
+  {
     slug: "kirkland",
     title: "Kirkland",
     metaTitle: "Kirkland Junk Removal",
@@ -811,6 +885,43 @@ export const AREA_PAGES: AreaPage[] = [
         question: "Can Kirkland jobs be quoted by text?",
         answer:
           "Yes. Photos, address, and timing are usually enough to start the quote quickly.",
+      },
+    ],
+  },
+  {
+    slug: "mercer-island",
+    title: "Mercer Island",
+    metaTitle: "Mercer Island Junk Removal",
+    metaDescription:
+      "Mercer Island junk removal for furniture pickup, estate cleanouts, garage cleanouts, and residential debris hauling with premium service and careful handling.",
+    h1: "Junk removal in Mercer Island.",
+    intro:
+      "Mercer Island jobs usually need a dependable residential hauling crew that communicates clearly and protects the route through the home. Furniture, cleanouts, and property reset work are common here.",
+    localAngle:
+      "The strongest fit in Mercer Island is organized residential service for homeowners who care about timing, property treatment, and a cleaner finished result.",
+    commonRequests: [
+      "Furniture pickup",
+      "Garage cleanouts",
+      "Estate and downsizing cleanouts",
+      "General junk removal",
+    ],
+    familiarWith: [
+      "Residential route protection",
+      "Polished communication and arrival windows",
+      "Mixed bulky-item and household junk loads",
+    ],
+    relatedServiceSlugs: ["furniture-removal", "garage-cleanout", "estate-cleanout", "junk-removal"],
+    nearby: ["Bellevue", "Newcastle", "Seattle"],
+    faqs: [
+      {
+        question: "Do you serve Mercer Island for residential junk removal?",
+        answer:
+          "Yes. Mercer Island fits well for furniture pickup, estate cleanouts, garage cleanouts, and general household junk hauling.",
+      },
+      {
+        question: "Can Mercer Island jobs be quoted quickly by text?",
+        answer:
+          "Yes. Photos, the address, and the timing are still the fastest way to quote and schedule Mercer Island jobs.",
       },
     ],
   },

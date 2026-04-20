@@ -1,4 +1,6 @@
+import Link from "next/link";
 import {
+  LOCATION_PAGE_LINKS,
   SITE,
   buildBreadcrumbSchema,
   buildMetadata,
@@ -95,6 +97,27 @@ export default function ContactPage() {
               <h3>Respectful service</h3>
               <p>Ideal for homeowners who want a team they would feel comfortable sending to the property again.</p>
             </article>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container split-section">
+            <div className="section-heading">
+              <p className="eyebrow">Area Pages</p>
+              <h2>Direct links to the local pages people search before they book.</h2>
+              <p className="section-copy">
+                If you are checking coverage for Bellevue, Medina, Clyde Hill, Kirkland,
+                Mercer Island, Redmond, Bridle Trails, or core north Seattle neighborhoods,
+                start with the dedicated location page below.
+              </p>
+            </div>
+            <div className="area-chip-grid">
+              {LOCATION_PAGE_LINKS.map((page) => (
+                <Link key={page.href} className="area-chip area-chip-link" href={page.href}>
+                  {page.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       </main>

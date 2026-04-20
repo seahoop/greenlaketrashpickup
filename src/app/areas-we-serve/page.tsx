@@ -94,14 +94,46 @@ export default function AreasWeServePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">City And Neighborhood Pages</p>
-              <h2>Dedicated local pages for neighborhoods, cities, and nearby service-area markets.</h2>
+              <h2>Dedicated local pages for neighborhoods, cities, and higher-value Eastside markets.</h2>
               <p className="section-copy">
                 Each page is written around local job patterns, common cleanout scenarios,
-                related services, and location-specific FAQs.
+                related services, and location-specific FAQs. The goal is full crawl coverage, not
+                just a handful of visible area links.
               </p>
             </div>
             <div className="area-chip-grid">
               {LOCATION_PAGE_LINKS.map((page) => (
+                <Link key={page.href} className="area-chip area-chip-link" href={page.href}>
+                  {page.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container split-section">
+            <div className="section-heading">
+              <p className="eyebrow">Eastside Coverage</p>
+              <h2>Priority city pages for Bellevue, Medina, Clyde Hill, Kirkland, Mercer Island, Redmond, and Bridle Trails.</h2>
+              <p className="section-copy">
+                These are the location pages most likely to matter for premium Eastside search intent and
+                should stay heavily linked from the homepage, footer, and related service pages.
+              </p>
+            </div>
+            <div className="area-chip-grid">
+              {LOCATION_PAGE_LINKS.filter((page) =>
+                [
+                  "Bellevue",
+                  "Medina",
+                  "Clyde Hill",
+                  "Kirkland",
+                  "Mercer Island",
+                  "Redmond",
+                  "Bridle Trails",
+                  "Newcastle",
+                ].includes(page.label),
+              ).map((page) => (
                 <Link key={page.href} className="area-chip area-chip-link" href={page.href}>
                   {page.label}
                 </Link>

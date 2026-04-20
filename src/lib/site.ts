@@ -45,7 +45,10 @@ export const SITE = {
     "Woodland Park",
     "Loyal Heights",
     "Bellevue",
+    "Medina",
+    "Clyde Hill",
     "Kirkland",
+    "Mercer Island",
     "Redmond",
     "Bridle Trails",
     "Newcastle",
@@ -98,13 +101,20 @@ export const LOCATION_PAGE_LINKS = [
   { href: "/areas-we-serve/wallingford", label: "Wallingford" },
   { href: "/areas-we-serve/greenwood", label: "Greenwood" },
   { href: "/areas-we-serve/roosevelt", label: "Roosevelt" },
+  { href: "/areas-we-serve/maple-leaf", label: "Maple Leaf" },
   { href: "/areas-we-serve/northgate", label: "Northgate" },
   { href: "/areas-we-serve/fremont", label: "Fremont" },
   { href: "/areas-we-serve/phinney-ridge", label: "Phinney Ridge" },
   { href: "/areas-we-serve/ballard", label: "Ballard" },
   { href: "/areas-we-serve/bellevue", label: "Bellevue" },
+  { href: "/areas-we-serve/medina", label: "Medina" },
+  { href: "/areas-we-serve/clyde-hill", label: "Clyde Hill" },
   { href: "/areas-we-serve/kirkland", label: "Kirkland" },
+  { href: "/areas-we-serve/mercer-island", label: "Mercer Island" },
   { href: "/areas-we-serve/redmond", label: "Redmond" },
+  { href: "/areas-we-serve/bridle-trails", label: "Bridle Trails" },
+  { href: "/areas-we-serve/newcastle", label: "Newcastle" },
+  { href: "/areas-we-serve/south-park", label: "South Park" },
 ] as const;
 
 export const TRUST_BADGES = [
@@ -253,7 +263,10 @@ export const FEATURED_AREAS = [
   "Wallingford",
   "Fremont",
   "Roosevelt",
-  "Phinney Ridge",
+  "Bellevue",
+  "Kirkland",
+  "Medina",
+  "Bridle Trails",
   "Ballard",
 ] as const;
 

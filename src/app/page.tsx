@@ -233,6 +233,26 @@ export default function HomePage() {
         <section className="section">
           <div className="container split-section">
             <div className="section-heading">
+              <p className="eyebrow">High-Value Area Pages</p>
+              <h2>Direct landing pages for Eastside cities, premium neighborhoods, and core Seattle service areas.</h2>
+              <p className="section-copy">
+                These internal links help Google discover the full location coverage more quickly, including
+                Medina, Clyde Hill, Mercer Island, Bridle Trails, Bellevue, Kirkland, and Redmond.
+              </p>
+            </div>
+            <div className="area-chip-grid">
+              {LOCATION_PAGE_LINKS.map((page) => (
+                <Link key={page.href} className="area-chip area-chip-link" href={page.href}>
+                  {page.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container split-section">
+            <div className="section-heading">
               <p className="eyebrow">Portfolio Preview</p>
               <h2>Real jobs. Cleaner spaces. Better first impressions.</h2>
               <p className="section-copy">

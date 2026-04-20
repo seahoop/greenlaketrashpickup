@@ -180,7 +180,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           <div>
             <h3>Areas</h3>
             <ul className="footer-list">
-              {LOCATION_PAGE_LINKS.slice(0, 5).map((link) => (
+              {LOCATION_PAGE_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>
