@@ -52,6 +52,7 @@ export default function HomePage() {
               loop
               playsInline
               preload="metadata"
+              poster="/Portfolio%20page%20.png"
             >
               <source src="/Home%20Page%20Background.mp4" type="video/mp4" />
             </video>

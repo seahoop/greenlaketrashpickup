@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { LOCATION_PAGE_LINKS, NAV_LINKS, SERVICE_PAGE_LINKS, SITE } from "../lib/site";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const targets = Array.from(
@@ -39,8 +40,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
-          } else {
-            entry.target.classList.remove("is-visible");
+            observer.unobserve(entry.target);
           }
         });
       },
@@ -61,6 +61,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
     };
   }, [pathname]);
 
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
   return (
     <>
       <header className="site-header">
@@ -75,6 +79,18 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
               priority
             />
           </Link>
+          <button
+            type="button"
+            className={mobileMenuOpen ? "mobile-nav-toggle is-open" : "mobile-nav-toggle"}
+            aria-label="Open navigation menu"
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
           <nav className="desktop-nav" aria-label="Primary">
             {NAV_LINKS.map((link) => (
               <Link
@@ -95,6 +111,31 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
               Call Now
             </a>
           </div>
+        </div>
+        <div
+          id="mobile-navigation"
+          className={mobileMenuOpen ? "mobile-nav-shell is-open" : "mobile-nav-shell"}
+        >
+          <nav className="mobile-nav" aria-label="Mobile">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={pathname === link.href ? "mobile-nav-link active" : "mobile-nav-link"}
+                aria-current={pathname === link.href ? "page" : undefined}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="mobile-nav-actions">
+              <a className="button button-primary button-text-emphasis" href={SITE.textHref}>
+                Text Quote
+              </a>
+              <a className="button button-secondary" href={SITE.callHref}>
+                Call Now
+              </a>
+            </div>
+          </nav>
         </div>
       </header>
       {children}

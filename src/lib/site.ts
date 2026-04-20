@@ -558,16 +558,19 @@ export function buildMetadata({
   description: string;
   path: string;
 }): Metadata {
+  const canonicalPath = normalizeCanonicalPath(path);
+  const canonicalUrl = new URL(canonicalPath, SITE.url).toString();
+
   return {
     title,
     description,
     alternates: {
-      canonical: path,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title,
       description,
-      url: `${SITE.url}${path}`,
+      url: canonicalUrl,
       siteName: SITE.name,
       locale: "en_US",
       type: "website",
@@ -587,6 +590,18 @@ export function buildMetadata({
       images: [SITE.ogImagePath],
     },
   };
+}
+
+function normalizeCanonicalPath(path: string) {
+  if (!path || path === "/") {
+    return "/";
+  }
+
+  const trimmedPath = path.trim();
+  const withLeadingSlash = trimmedPath.startsWith("/") ? trimmedPath : `/${trimmedPath}`;
+  const normalizedPath = withLeadingSlash.replace(/\/+$/, "");
+
+  return normalizedPath || "/";
 }
 
 export function buildLocalBusinessSchema() {
