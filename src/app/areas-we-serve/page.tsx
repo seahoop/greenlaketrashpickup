@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   AREA_CLUSTERS,
   LOCATION_PAGE_LINKS,
-  POPULAR_SEO_TERMS,
   SITE,
   buildBreadcrumbSchema,
   buildMetadata,
@@ -67,10 +66,9 @@ export default function AreasWeServePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Regional Hubs</p>
-              <h2>Hub pages for broader Seattle and Eastside search intent.</h2>
+              <h2>Broader Seattle and Eastside coverage pages.</h2>
               <p className="section-copy">
-                These pages support broader searches like Seattle junk removal,
-                north Seattle junk removal, Eastside junk removal, and greater Seattle junk removal.
+                These pages cover broader Seattle, north Seattle, Eastside, and greater Seattle service areas.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -94,11 +92,9 @@ export default function AreasWeServePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">City And Neighborhood Pages</p>
-              <h2>Dedicated local pages for neighborhoods, cities, and higher-value Eastside markets.</h2>
+              <h2>Find your neighborhood, city, or nearby Eastside service area.</h2>
               <p className="section-copy">
-                Each page is written around local job patterns, common cleanout scenarios,
-                related services, and location-specific FAQs. The goal is full crawl coverage, not
-                just a handful of visible area links.
+                Find the neighborhood or city closest to your job and start there for local service details.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -117,8 +113,7 @@ export default function AreasWeServePage() {
               <p className="eyebrow">Eastside Coverage</p>
               <h2>Priority city pages for Bellevue, Medina, Clyde Hill, Kirkland, Mercer Island, Redmond, and Bridle Trails.</h2>
               <p className="section-copy">
-                These are the location pages most likely to matter for premium Eastside search intent and
-                should stay heavily linked from the homepage, footer, and related service pages.
+                These are the core Eastside service areas for larger residential cleanouts, furniture pickup, and careful scheduling.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -204,12 +199,12 @@ export default function AreasWeServePage() {
         <section className="section">
           <div className="container two-column">
             <div className="content-card">
-              <p className="eyebrow">Internal Links</p>
-              <h3>Keep users and search engines moving naturally through the site.</h3>
+              <p className="eyebrow">More About The Service</p>
+              <h3>See recent work and learn more about how the service is handled.</h3>
               <p>
-                From area pages, direct visitors to the <Link href="/portfolio">portfolio</Link>,
+                Visit the <Link href="/portfolio">portfolio</Link>,
                 <Link href="/team"> team page</Link>, and <Link href="/contact"> contact page</Link>
-                for proof, trust, and conversion support.
+                for project examples, company background, and quote details.
               </p>
             </div>
             <div className="content-card">
@@ -223,25 +218,6 @@ export default function AreasWeServePage() {
           </div>
         </section>
 
-        <section className="section section-band">
-          <div className="container">
-            <div className="section-heading centered">
-              <p className="eyebrow">Popular Searches</p>
-              <h2>Local Seattle junk removal terms people actually search.</h2>
-              <p className="section-copy">
-                This page supports neighborhood intent around same-day junk removal, furniture removal,
-                garage cleanouts, estate cleanouts, move-out cleanup, and yard debris haul away across north Seattle.
-              </p>
-            </div>
-            <div className="seo-term-grid">
-              {POPULAR_SEO_TERMS.map((term) => (
-                <div key={term} className="seo-term-chip">
-                  {term}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );

@@ -244,9 +244,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Who Usually Calls</p>
-              <h2>These are the customers and situations this page is built for.</h2>
+              <h2>These are the customers and situations this service fits best.</h2>
               <p className="section-copy">
-                The service should match the real job type and the real timeline, not a templated sales pitch.
+                The right pickup depends on the actual job, the access, and how quickly you need it gone.
               </p>
             </div>
             <div className="stack-grid">
@@ -286,7 +286,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <p className="eyebrow">Items Handled</p>
               <h2>Typical loads that fit this service well.</h2>
               <p className="section-copy">
-                The exact mix varies by neighborhood, but these are the item types most commonly tied to this service page.
+                The exact mix varies by neighborhood, but these are the item types most commonly handled with this service.
               </p>
             </div>
             <div className="stack-grid">
@@ -354,13 +354,13 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         {relatedServices.length > 0 ? (
           <section className="section">
             <div className="container split-section">
-              <div className="section-heading">
-                <p className="eyebrow">Related Services</p>
-                <h2>People searching {page.title.toLowerCase()} often need these pages too.</h2>
-                <p className="section-copy">
-                  These internal links help connect this service to the real job types customers usually compare together.
-                </p>
-              </div>
+            <div className="section-heading">
+              <p className="eyebrow">Related Services</p>
+              <h2>Customers booking {page.title.toLowerCase()} often need these services too.</h2>
+              <p className="section-copy">
+                These are the services most often booked alongside or instead of this one.
+              </p>
+            </div>
               <div className="area-chip-grid">
                 {relatedServices.map((service) => (
                   <Link

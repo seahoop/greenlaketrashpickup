@@ -175,7 +175,7 @@ export default function HomePage() {
                   <h3>{service.title}</h3>
                   <p>{service.body}</p>
                   <Link className="text-link" href={SERVICE_PAGE_LINKS[index]?.href ?? "/services"}>
-                    View service page
+                    View service
                   </Link>
                 </article>
               ))}
@@ -236,7 +236,7 @@ export default function HomePage() {
               <p className="eyebrow">High-Value Area Pages</p>
               <h2>Direct landing pages for Eastside cities and core Seattle service areas.</h2>
               <p className="section-copy">
-                These internal links help Google discover the full location coverage more quickly.
+                Start with the city or neighborhood closest to your job.
               </p>
             </div>
             <div className="area-chip-grid">

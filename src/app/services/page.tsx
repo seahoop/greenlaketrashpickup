@@ -56,9 +56,9 @@ export default function ServicesPage() {
               <p className="eyebrow">Full Service Coverage</p>
               <h2>Built for the jobs homeowners, landlords, and property managers actually need handled.</h2>
               <p className="section-copy">
-                The site is structured around the search terms people use when they need
-                junk removal, garage cleanouts, furniture removal, move-out hauling,
-                estate cleanouts, and renovation debris pickup.
+                Junk removal, garage cleanouts, furniture removal, move-out hauling,
+                estate cleanouts, and renovation debris pickup handled with clear scheduling
+                and practical local service.
               </p>
             </div>
             <div className="stack-grid">
@@ -84,8 +84,8 @@ export default function ServicesPage() {
               <p className="eyebrow">Service Pages</p>
               <h2>Dedicated pages for each core junk removal and cleanout service.</h2>
               <p className="section-copy">
-                Each service page targets a distinct job type, local use cases, related
-                service areas, and conversion-focused FAQ intent.
+                Each service covers a different kind of pickup, from bulky furniture and
+                garage overflow to estate work, move-outs, and renovation debris.
               </p>
             </div>
             <div className="service-grid">
@@ -94,7 +94,7 @@ export default function ServicesPage() {
                   <h3>{service.title}</h3>
                   <p>{service.body}</p>
                   <Link className="text-link" href={SERVICE_PAGE_LINKS[index]?.href ?? "/contact"}>
-                    Explore service page
+                    View service
                   </Link>
                 </article>
               ))}
@@ -106,9 +106,9 @@ export default function ServicesPage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Where These Jobs Come From</p>
-              <h2>Search intent crosses Seattle neighborhoods, the Eastside, and surrounding service-area cities.</h2>
+              <h2>These services are booked across Seattle neighborhoods and nearby Eastside cities.</h2>
               <p className="section-copy">
-                Location pages support local intent for Green Lake, Wallingford, Greenwood,
+                Service is available across Green Lake, Wallingford, Greenwood,
                 Roosevelt, Fremont, Ballard, Bellevue, Kirkland, Redmond, and other nearby markets.
               </p>
             </div>

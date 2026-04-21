@@ -108,7 +108,7 @@ export default function ContactPage() {
               <p className="section-copy">
                 If you are checking coverage for Bellevue, Medina, Clyde Hill, Kirkland,
                 Mercer Island, Redmond, Bridle Trails, or core north Seattle neighborhoods,
-                start with the dedicated location page below.
+                start with the local area page below.
               </p>
             </div>
             <div className="area-chip-grid">

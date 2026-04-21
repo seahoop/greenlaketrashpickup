@@ -206,7 +206,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">What This Area Usually Needs</p>
-              <h2>{page.title} search intent usually overlaps with these requests.</h2>
+              <h2>These are the jobs people in {page.title} call about most often.</h2>
               <p className="section-copy">
                 These are the job types that actually lead people in {page.title} to start searching.
               </p>
@@ -228,7 +228,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
               <p className="eyebrow">Local Familiarity</p>
               <h2>These on-the-ground details shape how the job is quoted and scheduled.</h2>
               <p className="section-copy">
-                A strong area page should describe what actually changes in that market instead of repeating the same city text.
+                These local details affect access, timing, and how the pickup is handled.
               </p>
             </div>
             <div className="stack-grid">
@@ -256,9 +256,9 @@ export default async function AreaDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Related Services</p>
-              <h2>These service pages are the closest fit for {page.title} jobs.</h2>
+              <h2>These services are the closest fit for {page.title} jobs.</h2>
               <p className="section-copy">
-                Internal links should reflect the services customers in this area actually compare and book.
+                These are the services most often booked for jobs in this area.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -280,9 +280,9 @@ export default async function AreaDetailPage({ params }: PageProps) {
             <div className="container split-section">
               <div className="section-heading">
                 <p className="eyebrow">Nearby Areas</p>
-                <h2>People searching {page.title} often compare these nearby pages too.</h2>
+                <h2>These nearby areas are commonly served on the same routes.</h2>
                 <p className="section-copy">
-                  Nearby neighborhoods and cities help form a real local cluster instead of a thin standalone area page.
+                  Nearby neighborhoods and cities often overlap with the same scheduling and service patterns.
                 </p>
               </div>
               <div className="area-chip-grid">
