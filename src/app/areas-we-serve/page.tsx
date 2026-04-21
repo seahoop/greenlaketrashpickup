@@ -12,7 +12,7 @@ import { AREA_PAGES } from "../../lib/seo-pages";
 export const metadata = buildMetadata({
   title: "Areas We Serve",
   description:
-    "Greenlake Junk Removal serves Green Lake, Greenwood, Wallingford, Fremont, Roosevelt, Ballard, Phinney Ridge, and nearby north Seattle neighborhoods with premium junk hauling.",
+    "Greenlake Junk Removal serves Green Lake, Wallingford, Bellevue, Medina, Bridle Trails, Kirkland, Mercer Island, Ballard, and nearby Seattle and Eastside areas.",
   path: "/areas-we-serve",
 });
 

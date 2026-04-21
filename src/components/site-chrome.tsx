@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { LOCATION_PAGE_LINKS, NAV_LINKS, SERVICE_PAGE_LINKS, SITE } from "../lib/site";
+import { FOOTER_AREA_LINKS, NAV_LINKS, SERVICE_PAGE_LINKS, SITE } from "../lib/site";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -180,7 +180,7 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           <div>
             <h3>Areas</h3>
             <ul className="footer-list">
-              {LOCATION_PAGE_LINKS.map((link) => (
+              {FOOTER_AREA_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>{link.label}</Link>
                 </li>

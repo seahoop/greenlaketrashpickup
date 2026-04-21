@@ -83,6 +83,8 @@ export const NAV_LINKS = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
+export const PRIMARY_CTA_TEXT = "Text photos for a fast quote: 425-728-0942";
+
 export const SERVICE_PAGE_LINKS = [
   { href: "/services/junk-removal", label: "Junk Removal" },
   { href: "/services/furniture-removal", label: "Furniture Removal" },
@@ -115,6 +117,17 @@ export const LOCATION_PAGE_LINKS = [
   { href: "/areas-we-serve/bridle-trails", label: "Bridle Trails" },
   { href: "/areas-we-serve/newcastle", label: "Newcastle" },
   { href: "/areas-we-serve/south-park", label: "South Park" },
+] as const;
+
+export const FOOTER_AREA_LINKS = [
+  { href: "/areas-we-serve/green-lake", label: "Green Lake" },
+  { href: "/areas-we-serve/wallingford", label: "Wallingford" },
+  { href: "/areas-we-serve/bellevue", label: "Bellevue" },
+  { href: "/areas-we-serve/medina", label: "Medina" },
+  { href: "/areas-we-serve/bridle-trails", label: "Bridle Trails" },
+  { href: "/areas-we-serve/kirkland", label: "Kirkland" },
+  { href: "/areas-we-serve/mercer-island", label: "Mercer Island" },
+  { href: "/areas-we-serve/ballard", label: "Ballard" },
 ] as const;
 
 export const TRUST_BADGES = [
@@ -632,7 +645,7 @@ export function buildLocalBusinessSchema() {
     description: SITE.defaultDescription,
     areaServed: SITE.serviceAreas.map((area) => ({
       "@type": "Place",
-      name: `${area}, Seattle, Washington`,
+      name: `${area}, Washington`,
     })),
     address: {
       "@type": "PostalAddress",
@@ -680,7 +693,7 @@ export function buildServiceSchema() {
     },
     areaServed: SITE.serviceAreas.map((area) => ({
       "@type": "Place",
-      name: `${area}, Seattle, Washington`,
+      name: `${area}, Washington`,
     })),
     serviceType: SITE.services,
     description: SITE.defaultDescription,

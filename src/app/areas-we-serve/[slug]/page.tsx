@@ -7,6 +7,7 @@ import {
   SERVICE_PAGE_MAP,
 } from "../../../lib/seo-pages";
 import {
+  PRIMARY_CTA_TEXT,
   SITE,
   buildBreadcrumbSchema,
   buildFaqSchema,
@@ -36,6 +37,37 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   });
 }
 
+function CtaBanner({
+  eyebrow,
+  title,
+  body,
+}: {
+  eyebrow: string;
+  title: string;
+  body: string;
+}) {
+  return (
+    <div className="cta-banner">
+      <div className="cta-banner-copy">
+        <p className="eyebrow">{eyebrow}</p>
+        <h2>{title}</h2>
+        <p>{body}</p>
+        <p>
+          <strong>{PRIMARY_CTA_TEXT}</strong>
+        </p>
+      </div>
+      <div className="cta-banner-actions">
+        <a className="button button-primary button-text-emphasis" href={SITE.textHref}>
+          Text for a Quote
+        </a>
+        <a className="button button-secondary" href={SITE.callHref}>
+          Call Now
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default async function AreaDetailPage({ params }: PageProps) {
   const { slug } = await params;
   const page = AREA_PAGE_MAP[slug];
@@ -52,9 +84,12 @@ export default async function AreaDetailPage({ params }: PageProps) {
     .map((label) =>
       AREA_PAGES.find((candidate) => candidate.title.toLowerCase() === label.toLowerCase()),
     )
-    .filter((area): area is NonNullable<typeof area> => Boolean(area));
+    .filter((area): area is NonNullable<typeof area> => Boolean(area))
+    .filter((area) => area.slug !== page.slug);
 
-  const serviceSchema = {
+  const overview = page.overview ?? [page.intro, page.localAngle];
+
+  const areaSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: page.h1,
@@ -67,6 +102,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
       "@id": `${SITE.url}/#localbusiness`,
       name: SITE.name,
       telephone: SITE.phone,
+      url: SITE.url,
     },
     description: page.metaDescription,
   };
@@ -94,7 +130,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(serviceSchema),
+          __html: JSON.stringify(areaSchema),
         }}
       />
       <main className="inner-page">
@@ -108,38 +144,78 @@ export default async function AreaDetailPage({ params }: PageProps) {
         </section>
 
         <section className="section">
+          <div className="container">
+            <CtaBanner
+              eyebrow={`${page.title} Quote`}
+              title={`Need ${page.title} junk removal with a clear arrival window?`}
+              body="Text photos, include the location, and get a useful quote range quickly. That is still the fastest way to schedule pickup."
+            />
+          </div>
+        </section>
+
+        <section className="section">
           <div className="container split-section">
             <div className="section-heading">
-              <p className="eyebrow">Local Fit</p>
-              <h2>{page.title} jobs need a crew that understands the area.</h2>
-              <p className="section-copy">{page.localAngle}</p>
+              <p className="eyebrow">Local Overview</p>
+              <h2>{page.title} jobs need content that matches the real neighborhood fit.</h2>
+              {overview.map((paragraph) => (
+                <p key={paragraph} className="section-copy">
+                  {paragraph}
+                </p>
+              ))}
             </div>
             <div className="stack-grid">
               {page.commonRequests.map((request) => (
                 <article key={request} className="content-card">
                   <h3>{request}</h3>
-                  <p>Quoted quickly by text with clear scheduling and clean communication.</p>
+                  <p>{PRIMARY_CTA_TEXT}</p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
+        {page.detailSections?.map((section, index) => (
+          <section
+            key={section.title}
+            className={index % 2 === 0 ? "section section-band" : "section"}
+          >
+            <div className="container split-section">
+              <div className="section-heading">
+                <p className="eyebrow">Local Detail</p>
+                <h2>{section.title}</h2>
+                {section.paragraphs.map((paragraph) => (
+                  <p key={paragraph} className="section-copy">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+              <div className="stack-grid">
+                {(section.bullets ?? page.familiarWith).map((item) => (
+                  <article key={item} className="content-card">
+                    <h3>{item}</h3>
+                    <p>Practical local scheduling starts with good photos and a real address.</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        ))}
+
         <section className="section section-band">
           <div className="container split-section">
             <div className="section-heading">
-              <p className="eyebrow">Why This Area Works</p>
-              <h2>Neighborhood familiarity helps the service feel faster and cleaner.</h2>
+              <p className="eyebrow">What This Area Usually Needs</p>
+              <h2>{page.title} search intent usually overlaps with these requests.</h2>
               <p className="section-copy">
-                Familiarity with access, route planning, and local job patterns keeps the pickup
-                organized from first contact through final sweep-up.
+                These are the job types that actually lead people in {page.title} to start searching.
               </p>
             </div>
             <div className="stack-grid">
-              {page.familiarWith.map((item) => (
-                <article key={item} className="content-card">
-                  <h3>{item}</h3>
-                  <p>The goal is a straightforward visit that respects the home, timeline, and property layout.</p>
+              {page.commonRequests.map((request) => (
+                <article key={request} className="content-card">
+                  <h3>Common local request</h3>
+                  <p>{request}</p>
                 </article>
               ))}
             </div>
@@ -149,15 +225,49 @@ export default async function AreaDetailPage({ params }: PageProps) {
         <section className="section">
           <div className="container split-section">
             <div className="section-heading">
-              <p className="eyebrow">Related Services</p>
-              <h2>Search intent in {page.title} usually overlaps with these service pages.</h2>
+              <p className="eyebrow">Local Familiarity</p>
+              <h2>These on-the-ground details shape how the job is quoted and scheduled.</h2>
               <p className="section-copy">
-                Internal linking is built around the services clients in this area usually need most.
+                A strong area page should describe what actually changes in that market instead of repeating the same city text.
+              </p>
+            </div>
+            <div className="stack-grid">
+              {page.familiarWith.map((item) => (
+                <article key={item} className="content-card">
+                  <h3>Why it matters</h3>
+                  <p>{item}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-band">
+          <div className="container">
+            <CtaBanner
+              eyebrow="Fastest Next Step"
+              title={`Text photos for a fast ${page.title} quote.`}
+              body={`Include the address, explain what needs to go, and mention any access details that affect the route in ${page.title}.`}
+            />
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="container split-section">
+            <div className="section-heading">
+              <p className="eyebrow">Related Services</p>
+              <h2>These service pages are the closest fit for {page.title} jobs.</h2>
+              <p className="section-copy">
+                Internal links should reflect the services customers in this area actually compare and book.
               </p>
             </div>
             <div className="area-chip-grid">
               {relatedServices.map((service) => (
-                <Link key={service.slug} className="area-chip area-chip-link" href={`/services/${service.slug}`}>
+                <Link
+                  key={service.slug}
+                  className="area-chip area-chip-link"
+                  href={`/services/${service.slug}`}
+                >
                   {service.title}
                 </Link>
               ))}
@@ -170,11 +280,18 @@ export default async function AreaDetailPage({ params }: PageProps) {
             <div className="container split-section">
               <div className="section-heading">
                 <p className="eyebrow">Nearby Areas</p>
-                <h2>Related neighborhoods and city pages nearby.</h2>
+                <h2>People searching {page.title} often compare these nearby pages too.</h2>
+                <p className="section-copy">
+                  Nearby neighborhoods and cities help form a real local cluster instead of a thin standalone area page.
+                </p>
               </div>
               <div className="area-chip-grid">
                 {nearbyAreas.map((area) => (
-                  <Link key={area.slug} className="area-chip area-chip-link" href={`/areas-we-serve/${area.slug}`}>
+                  <Link
+                    key={area.slug}
+                    className="area-chip area-chip-link"
+                    href={`/areas-we-serve/${area.slug}`}
+                  >
                     {area.title}
                   </Link>
                 ))}
@@ -202,24 +319,11 @@ export default async function AreaDetailPage({ params }: PageProps) {
 
         <section className="section">
           <div className="container">
-            <div className="cta-banner">
-              <div className="cta-banner-copy">
-                <p className="eyebrow">{page.title} Quote</p>
-                <h2>Need a fast answer for a {page.title} job?</h2>
-                <p>
-                  Text photos, the address, and the timing. That is the fastest route to a clear
-                  quote for jobs in {page.title} and nearby service areas.
-                </p>
-              </div>
-              <div className="cta-banner-actions">
-                <a className="button button-primary button-text-emphasis" href={SITE.textHref}>
-                  Text for a Quote
-                </a>
-                <a className="button button-secondary" href={SITE.callHref}>
-                  Call Now
-                </a>
-              </div>
-            </div>
+            <CtaBanner
+              eyebrow="Ready To Schedule"
+              title={`Need a fast answer for a ${page.title} pickup?`}
+              body={`Text photos, include the ${page.title} location, and say when you want the job handled. That is the fastest route to a clear quote.`}
+            />
           </div>
         </section>
       </main>

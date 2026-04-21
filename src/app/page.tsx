@@ -17,9 +17,9 @@ import {
 } from "../lib/site";
 
 export const metadata = buildMetadata({
-  title: "Junk Removal Green Lake Seattle",
+  title: "Green Lake Junk Removal | Seattle & Eastside Junk Pickup",
   description:
-    "Greenlake Junk Removal offers premium junk removal, furniture removal, garage cleanouts, and same-day service across Green Lake and north Seattle neighborhoods.",
+    "Green Lake junk removal for Seattle and Eastside homes. Furniture removal, garage cleanouts, estate cleanouts, move-out pickups, and fast text-based quotes.",
   path: "/",
 });
 
@@ -60,7 +60,11 @@ export default function HomePage() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <span className="hero-badge">Serving Green Lake & North Seattle</span>
-              <h1 className="home-hero-title">JUNK REMOVAL DONE RIGHT.</h1>
+              <h1 className="home-hero-title">GREEN LAKE JUNK REMOVAL DONE RIGHT.</h1>
+              <p className="hero-lead">
+                Furniture removal, garage cleanouts, move-out pickups, and estate work across
+                Green Lake, Wallingford, Bellevue, Kirkland, Medina, Bridle Trails, Mercer Island, and Ballard.
+              </p>
               <div className="hero-actions">
                 <a className="button button-primary button-text-emphasis" href={SITE.textHref}>
                   Text for a Quote
@@ -75,7 +79,7 @@ export default function HomePage() {
                 <p className="eyebrow">Fast Quote</p>
                 <h2>Call or text photos.</h2>
                 <p>
-                  Send photos and your address for a fast estimate and the next available pickup window.
+                  Send photos and your address for a fast quote and the next open pickup window.
                 </p>
                 <div className="hero-mini-points">
                   {TRUST_BADGES.slice(0, 3).map((item) => (
@@ -99,10 +103,9 @@ export default function HomePage() {
           <div className="container">
             <div className="section-heading centered">
               <p className="eyebrow">Why Homeowners Choose Us</p>
-              <h2>Fast, clean, professional service without the usual hauling headaches.</h2>
+              <h2>Fast, clean service without the usual hauling hassle.</h2>
               <p className="section-copy">
-                Fast quotes, on-time arrival, and careful hauling for homes, rentals,
-                and move-outs. Same-day or next-day pickup is available when scheduling allows.
+                Fast quotes, on-time arrival, and careful hauling for homes, rentals, and move-outs.
               </p>
             </div>
             <div className="three-up">
@@ -122,8 +125,7 @@ export default function HomePage() {
               <p className="eyebrow">Customer Reviews</p>
               <h2>Dependable enough to book without hesitation.</h2>
               <p className="section-copy">
-                Customers care about the same things every time: a quick reply, a fair
-                quote, and a crew that handles the property professionally.
+                Customers want a quick reply, a fair quote, and a crew that handles the property professionally.
               </p>
             </div>
             <div className="review-summary-bar">
@@ -162,10 +164,9 @@ export default function HomePage() {
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Services</p>
-              <h2>Full-service hauling for the jobs Seattle homeowners actually need.</h2>
+              <h2>Full-service hauling for the jobs homeowners actually need.</h2>
               <p className="section-copy">
-                Furniture removal, garage cleanouts, estate cleanouts, yard debris, and
-                same-day pickup when routing allows.
+                Furniture removal, garage cleanouts, estate cleanouts, yard debris, and same-day pickup when routing allows.
               </p>
             </div>
             <div className="service-grid">
@@ -204,10 +205,9 @@ export default function HomePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Service Area</p>
-              <h2>Based near Green Lake with fast coverage into nearby north Seattle neighborhoods.</h2>
+              <h2>Based near Green Lake with fast coverage across north Seattle.</h2>
               <p className="section-copy">
-                Local routing helps with quicker response times, tighter arrival windows,
-                and easier scheduling.
+                Local routing helps with quicker response times and easier scheduling.
               </p>
               <Link className="text-link" href="/areas-we-serve">
                 Explore all Seattle service areas
@@ -234,10 +234,9 @@ export default function HomePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">High-Value Area Pages</p>
-              <h2>Direct landing pages for Eastside cities, premium neighborhoods, and core Seattle service areas.</h2>
+              <h2>Direct landing pages for Eastside cities and core Seattle service areas.</h2>
               <p className="section-copy">
-                These internal links help Google discover the full location coverage more quickly, including
-                Medina, Clyde Hill, Mercer Island, Bridle Trails, Bellevue, Kirkland, and Redmond.
+                These internal links help Google discover the full location coverage more quickly.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -256,8 +255,7 @@ export default function HomePage() {
               <p className="eyebrow">Portfolio Preview</p>
               <h2>Real jobs. Cleaner spaces. Better first impressions.</h2>
               <p className="section-copy">
-                Show the result customers actually want: cleared garages, cleaner move-outs,
-                and properties that feel ready again.
+                Show the result customers want: cleared garages, cleaner move-outs, and spaces that feel ready again.
               </p>
               <div className="portfolio-tag-row">
                 <span>Garage cleanouts</span>
@@ -290,8 +288,7 @@ export default function HomePage() {
               <p className="eyebrow">Seattle Service</p>
               <h2>Service coverage across Seattle, Bellevue, and the greater Seattle area.</h2>
               <p className="section-copy">
-                Greenlake Junk Removal serves neighborhoods across Seattle, Bellevue, and surrounding areas with junk
-                removal, furniture pickup, garage cleanouts, estate cleanouts, and yard debris haul away.
+                Junk removal, furniture pickup, garage cleanouts, estate cleanouts, and yard debris haul away across the greater Seattle area.
               </p>
             </div>
           </div>
