@@ -82,7 +82,7 @@ export default function ServicesPage() {
           <div className="container">
             <div className="section-heading">
               <p className="eyebrow">Service Pages</p>
-              <h2>Dedicated pages for each core junk removal and cleanout service.</h2>
+              <h2>Core junk removal and cleanout services.</h2>
               <p className="section-copy">
                 Each service covers a different kind of pickup, from bulky furniture and
                 garage overflow to estate work, move-outs, and renovation debris.

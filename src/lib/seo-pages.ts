@@ -412,7 +412,7 @@ const BASE_SERVICE_PAGES: ServicePage[] = [
       {
         question: "Do you handle small residential remodel debris?",
         answer:
-          "Yes. The service is positioned for smaller residential renovation cleanup rather than full commercial construction hauling.",
+          "Yes. The service is built for smaller residential renovation cleanup rather than full commercial construction hauling.",
       },
       {
         question: "What kinds of renovation material do you remove?",
@@ -989,7 +989,7 @@ const BASE_AREA_PAGES: AreaPage[] = [
     intro:
       "Bridle Trails jobs are a strong fit for a premium local-service approach. Clients here usually want reliable communication, careful property treatment, and a crew that works like the home has real value.",
     localAngle:
-      "The service is positioned for respectful loading, clear arrival windows, and a cleaner finished result rather than a rough contractor feel.",
+      "The service is built for respectful loading, clear arrival windows, and a cleaner finished result rather than a rough contractor feel.",
     commonRequests: [
       "Garage cleanouts",
       "Furniture removal",
@@ -1137,7 +1137,7 @@ const BASE_AREA_PAGES: AreaPage[] = [
     intro:
       "Greenlake Junk Removal is based near Green Lake and serves well beyond the immediate neighborhood. The broader service area includes Seattle, north Seattle, and Eastside cities where the same premium service standard still matters.",
     localAngle:
-      "The positioning stays honest: one service-area business serving a wider region, not a fake storefront in every city.",
+      "It is one local service business covering a wider region, with routing that regularly reaches Seattle and nearby Eastside cities.",
     commonRequests: [
       "Regional move-out cleanouts",
       "Furniture pickup",
@@ -1524,7 +1524,7 @@ const PRIORITY_SERVICE_OVERRIDES: Record<string, Partial<ServicePage>> = {
         title: "Why basement cleanouts require a different approach",
         paragraphs: [
           "Basement jobs are slower, heavier, and more route-sensitive than many other junk pickups. The material is often denser, the carrying path is harder, and the access is less forgiving. In Wallingford and Green Lake, that can mean older staircases, narrower landings, and finished interior routes that need to stay protected the whole time.",
-          "That is why basement cleanout work is best treated as its own service instead of being buried inside a generic hauling page. Customers searching for basement cleanout are usually looking for someone who understands the access problem, not just someone with a truck.",
+          "That is why basement cleanout work needs its own approach. Customers usually want someone who understands the access problem, not just someone with a truck.",
         ],
       },
       {
@@ -1602,7 +1602,7 @@ const PRIORITY_SERVICE_OVERRIDES: Record<string, Partial<ServicePage>> = {
       {
         title: "How estate cleanouts are usually structured",
         paragraphs: [
-          "Some estate jobs are one clean pass through a property. Others happen in phases because the family is still sorting, coordinating with donation pickups, or deciding what stays with the home. The important part is not forcing a single formula. The page needs to reflect the fact that estate work often depends on timing, family communication, and the condition of the property.",
+          "Some estate jobs are one clean pass through a property. Others happen in phases because the family is still sorting, coordinating with donation pickups, or deciding what stays with the home. The important part is not forcing a single formula. Estate work often depends on timing, family communication, and the condition of the property.",
           "That is also why the fastest quote still starts with photos, but a quick phone or text conversation about scope is often useful too. The goal is clarity before arrival, not confusion on site.",
         ],
       },
@@ -1815,7 +1815,7 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
         title: "Why local familiarity matters in Green Lake",
         paragraphs: [
           "Green Lake jobs often involve denser parking, tighter residential access, condo timing, and customers who care about presentation. A cleaner schedule and a practical arrival window matter more here than a generic national-style booking form. Texting photos works well because it lets the quote move quickly while still accounting for access and load size.",
-          "This is also one of the easiest neighborhoods to connect to nearby pages like Wallingford, Roosevelt, Fremont, and Phinney Ridge because customers in this part of Seattle often search across adjacent neighborhood names, not just one exact zip code idea.",
+          "This is also one of the neighborhoods most often scheduled alongside Wallingford, Roosevelt, Fremont, and Phinney Ridge because customers in this part of Seattle often think in terms of adjacent neighborhoods rather than one exact zip code.",
         ],
       },
       {
@@ -1852,15 +1852,15 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       "Wallingford junk removal for older homes, basement cleanouts, garage cleanouts, student and rental move-outs, and bulky furniture pickup.",
     h1: "Wallingford junk removal for older homes, basements, and tighter access routes.",
     overview: [
-      "Wallingford should not read like a copy of Green Lake with one neighborhood name swapped in. The jobs here are shaped heavily by older homes, basement stairs, detached garages, tighter parking, alley access, and the rental or student turnover patterns that show up near Fremont, the UW area, and surrounding neighborhoods.",
-      "That makes Wallingford one of the strongest pages for basement cleanouts, garage cleanouts, move-out hauling, and furniture removal where the route itself is part of the job. A crew can know how to load a truck and still fail this kind of work if the scheduling and access planning are sloppy.",
+      "Wallingford jobs are shaped heavily by older homes, basement stairs, detached garages, tighter parking, alley access, and the rental or student turnover patterns that show up near Fremont, the UW area, and surrounding neighborhoods.",
+      "That makes Wallingford a strong fit for basement cleanouts, garage cleanouts, move-out hauling, and furniture removal where the route itself is part of the job. A crew can know how to load a truck and still fail this kind of work if the scheduling and access planning are sloppy.",
       "Greenlake Junk Removal fits Wallingford well because the service is already built around practical local logistics. Photos, the address, and a few access notes are usually enough to tell whether the job is a basement heavy-load situation, a narrow-stair furniture pickup, a garage cleanup, or a rental turnover that has to move fast.",
     ],
     detailSections: [
       {
         title: "Why Wallingford jobs are different",
         paragraphs: [
-          "Wallingford has more older homes, more awkward lower-level access, and more parking and alley variables than a generic suburban cleanup page would suggest. Basement cleanouts are especially common because older houses often use the lower level as long-term overflow storage, and the route out is rarely simple.",
+          "Wallingford has more older homes, more awkward lower-level access, and more parking and alley variables than a typical suburban cleanup job. Basement cleanouts are especially common because older houses often use the lower level as long-term overflow storage, and the route out is rarely simple.",
           "Garage jobs matter here too, but they often happen in tighter settings where driveways are narrow, detached garages sit behind alleys, or the staging space is limited. Those details directly affect how the job should be quoted and scheduled.",
         ],
       },
@@ -1875,7 +1875,7 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
         title: "What helps a Wallingford quote move faster",
         paragraphs: [
           "For Wallingford, the most useful quote details are photos, whether the job is in a basement or detached garage, whether there are stairs, and what the parking or alley situation looks like. Those notes matter more here than they might on a very simple curbside load.",
-          "When the job is close to Green Lake, Fremont, or Lower Wallingford, routing can often stay efficient. That local relationship is worth stating because people search those adjacent neighborhood names interchangeably.",
+          "When the job is close to Green Lake, Fremont, or Lower Wallingford, routing can often stay efficient. Those adjacent neighborhoods often blend together in how customers describe the area.",
         ],
       },
     ],
@@ -1907,7 +1907,7 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
     overview: [
       "Bellevue is an important local market, and the jobs here tend to be more presentation-sensitive. Customers usually care about punctual communication, careful handling in higher-finish homes, and a quote process that feels straightforward rather than chaotic.",
       "That makes Bellevue a strong fit for furniture removal, garage cleanouts, move-out cleanouts, estate and downsizing work, and other residential junk removal where the condition of the property matters as much as truck capacity.",
-      "The company is not pretending to be a Bellevue storefront. It is a Green Lake-based junk removal business that serves Bellevue regularly when the route and job fit well. That straightforward service-area coverage is more useful for customers than vague marketing language.",
+      "Greenlake Junk Removal is based near Green Lake and serves Bellevue regularly when the route and job fit well. Customers usually care more about clear coverage, careful handling, and dependable scheduling than vague marketing language.",
     ],
     detailSections: [
       {
@@ -1958,23 +1958,23 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       "Medina junk removal for large-home cleanouts, estate and downsizing projects, luxury furniture removal, and listing prep with careful property protection.",
     h1: "Medina junk removal for large-home cleanouts, downsizing, and careful property protection.",
     overview: [
-      "Medina is not just a generic junk pickup market. The strongest jobs here are larger-home cleanouts, estate and downsizing work, luxury furniture removal, listing prep, and projects where the customer expects quiet, careful, high-trust service.",
-      "That expectation changes how the service should be described. It needs to talk about driveway, wall, and floor protection, donation-first sorting where possible, and organized scheduling.",
-      "Greenlake Junk Removal is still a Seattle-area service business, not a fake Medina storefront. But Medina is a real part of the Eastside service area, and the jobs that come from there are different enough that the page needs to be clearly local and clearly specific.",
+      "Medina jobs usually center on larger-home cleanouts, estate and downsizing work, luxury furniture removal, listing prep, and other pickups where customers want the service to stay quiet, careful, and organized.",
+      "That usually means paying attention to driveway, wall, and floor protection, donation-first sorting where possible, and scheduling that feels orderly from the first quote through the final pickup.",
+      "Greenlake Junk Removal serves Medina as part of its regular Eastside coverage, with a focus on practical communication, careful handling, and residential cleanout work that fits the property well.",
     ],
     detailSections: [
       {
         title: "What Medina jobs usually involve",
         paragraphs: [
           "The strongest Medina jobs are estate cleanouts, downsizing projects, listing-prep cleanouts, luxury furniture removal, and garage or storage resets in larger homes. These are often not rush-for-the-cheapest-price jobs. They are jobs where the customer wants the process to stay calm, practical, and well handled from the first quote through the final load-out.",
-          "Because those jobs often overlap with realtors, family timelines, and donation sorting, the page needs to acknowledge that the work is not always a one-size-fits-all full clear-out. Selective removal is often part of the value.",
+          "Because those jobs often overlap with realtors, family timelines, and donation sorting, the work is not always a one-size-fits-all full clear-out. Selective removal is often part of the value.",
         ],
       },
       {
         title: "Careful handling matters more here",
         paragraphs: [
           "In Medina, careful handling means more than just lifting safely. It means protecting floors, keeping the route through the home organized, avoiding unnecessary noise and clutter, and communicating in a way that feels polished. That is especially important when the home is high-finish, occupied, or being prepared for sale.",
-          "The service should not claim things it cannot support, but it can honestly say that it is built for customers who want the work to feel respectful rather than rushed and rough.",
+          "The service is built for customers who want the work to feel respectful rather than rushed and rough.",
         ],
       },
       {
@@ -2011,29 +2011,29 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       "Bridle Trails junk removal for large residential lots, garage and storage overflow, yard debris, basement cleanouts, and careful Eastside routing.",
     h1: "Bridle Trails junk removal for larger lots, storage overflow, and careful Eastside routing.",
     overview: [
-      "Bridle Trails deserves a distinct page because the jobs there are not the same as dense-city pickups in Seattle. The neighborhood is better known for larger residential lots, bigger garages, outdoor overflow, basement or storage clearing, and cleanup projects that sit near the Bellevue, Kirkland, and Redmond border.",
-      "That local position makes Bridle Trails a strong page for garage cleanouts, yard debris removal, basement cleanouts, furniture removal, and larger residential property resets where the route still needs to feel organized and careful.",
-      "The right page content should not oversell fake proximity. It should explain why Bridle Trails jobs are a practical fit for the service area and how the work differs from tighter-city pickups in Wallingford or Ballard.",
+      "Bridle Trails jobs are not the same as dense-city pickups in Seattle. The neighborhood is better known for larger residential lots, bigger garages, outdoor overflow, basement or storage clearing, and cleanup projects that sit near the Bellevue, Kirkland, and Redmond border.",
+      "That local position makes Bridle Trails a strong fit for garage cleanouts, yard debris removal, basement cleanouts, furniture removal, and larger residential property resets where the route still needs to feel organized and careful.",
+      "The service fits Bridle Trails well when the customer wants clear communication, careful handling, and a pickup plan that works for a larger property.",
     ],
     detailSections: [
       {
         title: "What Bridle Trails jobs usually look like",
         paragraphs: [
           "Many Bridle Trails jobs are about reclaiming space. Garages and storage areas become overflow zones, side yards collect debris, and lower levels hold furniture or household material that needs to be cleared before the property feels manageable again. Yard debris and outdoor cleanup matter more here than they do on some city pages because larger lots and exterior space are a bigger part of the job mix.",
-          "That mix is why the strongest service links from this page are garage cleanout, basement cleanout, yard debris removal, furniture removal, and renovation debris pickup when a property reset overlaps with remodel work.",
+          "That mix is why garage cleanout, basement cleanout, yard debris removal, furniture removal, and renovation debris pickup are all strong fits when a property reset overlaps with remodel work.",
         ],
       },
       {
         title: "Routing on the Bellevue, Kirkland, and Redmond edge",
         paragraphs: [
-          "Bridle Trails sits in a useful overlap area for Eastside routing. Customers often search Bellevue, Kirkland, Redmond, and Bridle Trails interchangeably depending on how they think about the property location. Internal linking should reflect that behavior rather than treating Bridle Trails like an isolated page with no relationship to surrounding markets.",
-          "That local routing angle also helps the page feel more real. It speaks to how the service area actually works, not just how the slug is labeled.",
+          "Bridle Trails sits in a useful overlap area for Eastside routing. Customers often think in terms of Bellevue, Kirkland, Redmond, and Bridle Trails interchangeably depending on how they describe the property location.",
+          "That local routing angle helps explain why these jobs often line up naturally with other nearby Eastside pickups.",
         ],
       },
       {
         title: "Why careful handling still matters on larger residential jobs",
         paragraphs: [
-          "Larger lots and garages do not automatically mean rougher service. Bridle Trails is still a page where careful property treatment, clear communication, and organized loading should be part of the pitch. That matters for homeowners who want a local crew to clear the project without turning the property into a mess.",
+          "Larger lots and garages do not automatically mean rougher service. Bridle Trails still calls for careful property treatment, clear communication, and organized loading. That matters for homeowners who want a local crew to clear the project without turning the property into a mess.",
           "This is especially relevant when the work includes garages, basements, storage buildings, and longer routes across the property before the material even reaches the truck.",
         ],
       },
@@ -2064,9 +2064,9 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       "Kirkland junk removal for remodel debris, furniture pickup, garage cleanouts, move-out work, and careful residential service in homes and condos.",
     h1: "Kirkland junk removal for remodel work, furniture pickup, and clean residential scheduling.",
     overview: [
-      "Kirkland is another page that needs its own local identity. The strongest jobs here are not a generic copy of Seattle. They are furniture pickup, remodel debris, garage cleanouts, move-out cleanouts, and residential junk removal where condo access, home finishes, or waterfront-area presentation can change how the service should be handled.",
-      "That makes Kirkland a strong fit for homeowners replacing furniture, clearing garages before a sale, managing a remodel, or dealing with a move that left the last bulky material behind. The service needs to speak directly to those situations instead of falling back on generic city copy.",
-      "It also needs to acknowledge that Kirkland work often cares about the route through the home, cleaner communication, and the finished look when the pickup is done. That is one of the better differentiators for the page.",
+      "Kirkland has its own local mix of jobs. The strongest fits here are furniture pickup, remodel debris, garage cleanouts, move-out cleanouts, and residential junk removal where condo access, home finishes, or waterfront-area presentation can change how the service is handled.",
+      "That makes Kirkland a strong fit for homeowners replacing furniture, clearing garages before a sale, managing a remodel, or dealing with a move that left the last bulky material behind.",
+      "Kirkland work often calls for a clean route through the home, cleaner communication, and a finished result that looks orderly when the pickup is done.",
     ],
     detailSections: [
       {
@@ -2086,8 +2086,8 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       {
         title: "How Kirkland connects to nearby service areas",
         paragraphs: [
-          "Kirkland should also be linked clearly to Bellevue, Medina, Bridle Trails, Redmond, and Mercer Island because those Eastside searches often overlap. Customers do not always search the exact neighborhood label a site owner would choose. They search the market they think they are in.",
-          "That is another reason Kirkland should connect naturally to related services and nearby area pages instead of standing alone.",
+          "Kirkland also sits close to Bellevue, Medina, Bridle Trails, Redmond, and Mercer Island, and customers often describe those nearby markets interchangeably depending on where the property sits.",
+          "That makes Kirkland a natural fit for broader Eastside routing as well as dedicated neighborhood pickups.",
         ],
       },
     ],
@@ -2119,14 +2119,14 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
     overview: [
       "Mercer Island has its own local rhythm. The strongest jobs here are estate cleanouts, downsizing projects, furniture removal, garage cleanouts, and larger-home junk removal where timing and property treatment both matter.",
       "That means the service needs to talk about careful scheduling, organized removal, route protection, and the kind of residential standard that fits occupied or well-kept homes.",
-      "Greenlake Junk Removal serves Mercer Island as part of the broader service area without pretending to be a neighborhood storefront there. The goal is useful, honest service information that matches the jobs people actually need handled.",
+      "Greenlake Junk Removal serves Mercer Island as part of its broader service area, with a focus on careful scheduling and the kinds of residential cleanouts people there actually need handled.",
     ],
     detailSections: [
       {
         title: "Best-fit Mercer Island projects",
         paragraphs: [
           "Estate cleanouts and downsizing work are especially strong here because those projects need pacing, communication, and property care more than aggressive sales language. Furniture removal also matters because homeowners often need larger items cleared during resets, remodels, or home transitions. Garage cleanouts and general property cleanup can be part of that same process when the goal is to simplify the whole property, not just remove one piece.",
-          "That combination gives Mercer Island a different service mix than a denser Seattle neighborhood. The content needs to match that job mix honestly and clearly.",
+          "That combination gives Mercer Island a different service mix than a denser Seattle neighborhood, with more emphasis on pacing, communication, and property care.",
         ],
       },
       {
@@ -2137,10 +2137,10 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
         ],
       },
       {
-        title: "Nearby markets that overlap with Mercer Island searches",
+        title: "Nearby markets that often overlap with Mercer Island jobs",
         paragraphs: [
-          "Mercer Island also overlaps naturally with Bellevue, Medina, and broader Eastside searches depending on how customers think about the market. Internal links to estate cleanout, furniture removal, garage cleanout, Bellevue, and Medina help that page fit into a real local cluster instead of floating alone.",
-          "That cluster structure is one of the cleaner ways to improve organic relevance without creating dozens of thin, repetitive area pages.",
+          "Mercer Island also overlaps naturally with Bellevue, Medina, and broader Eastside coverage depending on how customers think about the market.",
+          "That is why estate cleanout, furniture removal, garage cleanout, Bellevue, and Medina are all closely related to Mercer Island jobs.",
         ],
       },
     ],
@@ -2170,8 +2170,8 @@ const PRIORITY_AREA_OVERRIDES: Record<string, Partial<AreaPage>> = {
       "Ballard junk removal for remodel debris, apartment move-outs, furniture removal, appliance pickup, and tight-access scheduling in older homes and rentals.",
     h1: "Ballard junk removal for remodel debris, apartment move-outs, and tight-access pickups.",
     overview: [
-      "Ballard should not be treated like a generic Seattle clone because the local job mix is clear. Remodel debris, apartment move-outs, furniture removal, appliance pickup, and turnover work all show up regularly here, and the neighborhood often adds tighter streets, denser blocks, contractor overlap, and older homes to the equation.",
-      "That combination makes Ballard one of the better pages for renovation debris, furniture removal, move-out cleanouts, and appliance pickup. The site should say that directly instead of leaning on vague city-wide junk removal language.",
+      "Ballard has a clear local job mix. Remodel debris, apartment move-outs, furniture removal, appliance pickup, and turnover work all show up regularly here, and the neighborhood often adds tighter streets, denser blocks, contractor overlap, and older homes to the equation.",
+      "That combination makes Ballard a strong fit for renovation debris, furniture removal, move-out cleanouts, and appliance pickup.",
       "Greenlake Junk Removal fits Ballard best when the customer wants a cleaner quote process and a crew that can work around access realities without turning the property or block into unnecessary chaos.",
     ],
     detailSections: [

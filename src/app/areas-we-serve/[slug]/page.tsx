@@ -157,7 +157,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Local Overview</p>
-              <h2>{page.title} jobs need content that matches the real neighborhood fit.</h2>
+              <h2>{page.title} jobs have their own access, timing, and cleanup patterns.</h2>
               {overview.map((paragraph) => (
                 <p key={paragraph} className="section-copy">
                   {paragraph}
@@ -208,7 +208,7 @@ export default async function AreaDetailPage({ params }: PageProps) {
               <p className="eyebrow">What This Area Usually Needs</p>
               <h2>These are the jobs people in {page.title} call about most often.</h2>
               <p className="section-copy">
-                These are the job types that actually lead people in {page.title} to start searching.
+                These are the pickup types that come up most often in {page.title}.
               </p>
             </div>
             <div className="stack-grid">

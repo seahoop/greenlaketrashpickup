@@ -234,7 +234,7 @@ export default function HomePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">High-Value Area Pages</p>
-              <h2>Direct landing pages for Eastside cities and core Seattle service areas.</h2>
+              <h2>Direct links for Eastside cities and core Seattle service areas.</h2>
               <p className="section-copy">
                 Start with the city or neighborhood closest to your job.
               </p>

@@ -174,7 +174,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">What This Service Includes</p>
-              <h2>{page.title} built around real residential jobs, not generic hauling copy.</h2>
+              <h2>{page.title} for real residential jobs and practical scheduling.</h2>
               {overview.map((paragraph) => (
                 <p key={paragraph} className="section-copy">
                   {paragraph}
@@ -225,7 +225,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <p className="eyebrow">Common Jobs</p>
               <h2>{page.title} covers more than one kind of pickup.</h2>
               <p className="section-copy">
-                These are the situations that lead people to search this service in Green Lake,
+                These are the most common situations for this service in Green Lake,
                 Wallingford, Bellevue, Kirkland, Ballard, and nearby Seattle or Eastside areas.
               </p>
             </div>
@@ -380,9 +380,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Areas Served</p>
-              <h2>Strong local fit in these neighborhoods and city pages.</h2>
+              <h2>This service is regularly booked in these neighborhoods and cities.</h2>
               <p className="section-copy">
-                Service pages should point back to the neighborhoods and city pages where this work actually shows up.
+                These are the areas where this kind of pickup comes up most often.
               </p>
             </div>
             <div className="area-chip-grid">

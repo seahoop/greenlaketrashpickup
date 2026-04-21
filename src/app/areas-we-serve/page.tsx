@@ -66,9 +66,9 @@ export default function AreasWeServePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Regional Hubs</p>
-              <h2>Broader Seattle and Eastside coverage pages.</h2>
+              <h2>Broader Seattle and Eastside coverage areas.</h2>
               <p className="section-copy">
-                These pages cover broader Seattle, north Seattle, Eastside, and greater Seattle service areas.
+                Start here if your job is in a broader Seattle, north Seattle, Eastside, or greater Seattle area.
               </p>
             </div>
             <div className="area-chip-grid">
@@ -111,7 +111,7 @@ export default function AreasWeServePage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Eastside Coverage</p>
-              <h2>Priority city pages for Bellevue, Medina, Clyde Hill, Kirkland, Mercer Island, Redmond, and Bridle Trails.</h2>
+              <h2>Core Eastside cities including Bellevue, Medina, Clyde Hill, Kirkland, Mercer Island, Redmond, and Bridle Trails.</h2>
               <p className="section-copy">
                 These are the core Eastside service areas for larger residential cleanouts, furniture pickup, and careful scheduling.
               </p>
@@ -159,7 +159,7 @@ export default function AreasWeServePage() {
                             AREA_PAGES.find((page) => page.title.toLowerCase() === area.name.toLowerCase())!.slug
                           }`}
                         >
-                          View local page
+                          View area
                         </Link>
                       ) : null}
                       <a className="area-card-link" href={SITE.textHref}>
@@ -190,7 +190,7 @@ export default function AreasWeServePage() {
               </article>
               <article className="content-card">
                 <h3>Respectful service</h3>
-                <p>The service is positioned for homeowners who want a dependable crew and a tidy final result.</p>
+                <p>The service is built for homeowners who want a dependable crew and a tidy final result.</p>
               </article>
             </div>
           </div>

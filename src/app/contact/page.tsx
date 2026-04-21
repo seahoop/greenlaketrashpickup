@@ -104,11 +104,11 @@ export default function ContactPage() {
           <div className="container split-section">
             <div className="section-heading">
               <p className="eyebrow">Area Pages</p>
-              <h2>Direct links to the local pages people search before they book.</h2>
+              <h2>Direct links to the main service areas.</h2>
               <p className="section-copy">
                 If you are checking coverage for Bellevue, Medina, Clyde Hill, Kirkland,
                 Mercer Island, Redmond, Bridle Trails, or core north Seattle neighborhoods,
-                start with the local area page below.
+                start with the local area below.
               </p>
             </div>
             <div className="area-chip-grid">
